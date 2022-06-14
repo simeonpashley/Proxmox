@@ -1,5 +1,16 @@
-<h1 align="center" id="heading"> Select a Proxmox Helper Below </h1>
-</details>
+## Home Assistant on Proxmox - common helper apps
+
+2022-07-14 The info below was forked from another upstream repo that was taken offline, and ultimately had bad links inside so I repaired them here.
+
+Beyond those URL fixes, it largely remains untouched.
+
+A collection of commonly used services that can be simply setup using Proxmox and then woven into Home Assistant.
+
+---
+
+### Select a Proxmox Helper Below
+
+Inside each drop-down are the instructions for setting up the service, typically via Proxmox web shell.
 
 <details>
 <summary>Home Assistant OS VM</summary>
