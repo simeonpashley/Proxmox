@@ -312,6 +312,9 @@ sudo systemctl status mariadb
 Change the recorder: `db_url:` in your HA configuration.yaml
 
 Example: `mysql://admin:password@192.168.100.26:3306/homeassistant?charset=utf8mb4`
+ 
+### Further reading
+Take a look at  `HA_Migrate-sqlite-to-mysql.md` for how to migrate existing data over to MariaDB
 
 </details>
 
