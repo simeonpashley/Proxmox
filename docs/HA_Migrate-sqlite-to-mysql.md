@@ -22,7 +22,7 @@ Then, stop home assistant to have a non-changing database file.
 Change to your homeassitant data folder and then, using
 
 ```bash
-sqlite3 home-assistant_v2.db .dump > ha-database_sqlite.dump.sql
+sqlite3 home-assistant_v2.db .dump | gzip -c > ha-database_sqlite.dump.sql.gz
 ```
 
 you can dump your current sqlite Home Assistant database into an sql file.
@@ -39,7 +39,7 @@ You might need to make the shell file executable using `chmod +x ha-to-mysql.sh`
 Afterwards, you start the conversion process using
 
 ```bash
-sudo ./ha-to-mysql.sh ha-database_sqlite.dump.sql > mysql_import_me.sql
+sudo ./ha-to-mysql.sh ha-database_sqlite.dump.sql.gz > mysql_import_me.sql
 ```
 
 Like the initial dump, this may take quite a while to finish. And you won’t have a progress bar either.
