@@ -161,3 +161,72 @@ recorder:
 ```
 
 And that’s it!
+
+---
+
+My suite of changes 2022-06-17
+
+### event_data
+
+```sql
+SELECT MAX(data_id) AS Count FROM event_data;
+ALTER TABLE event_data MODIFY COLUMN data_id INT NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=
+
+### events
+
+```sql
+SELECT MAX(event_id) AS Count FROM events;
+ALTER TABLE events MODIFY COLUMN event_id INT NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=
+```
+
+### recorder_runs
+```sql
+SELECT MAX(run_id) as Count FROM recorder_runs;
+ALTER TABLE recorder_runs MODIFY COLUMN run_id INT NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=
+```
+
+### schema_changes
+
+```sql
+SELECT MAX(change_id) AS Count FROM schema_changes;
+ALTER TABLE schema_changes MODIFY COLUMN change_id INT NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=
+```
+
+### states
+
+```sql
+SELECT MAX(state_id) AS Count FROM states;
+ALTER TABLE states MODIFY COLUMN state_id INT NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=
+```
+
+### state_attributes
+
+```sql
+SELECT MAX(attributes_id) AS Count from state_attributes;
+ALTER TABLE state_attributes MODIFY COLUMN attributes_id INT NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=
+```
+
+### statistics
+
+```sql
+SELECT MAX(id) AS Count from statistics;
+ALTER TABLE statistics MODIFY COLUMN id INT NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=
+```
+
+### statistics_meta
+
+```sql
+SELECT MAX(id) AS Count from statistics_meta;
+ALTER TABLE statistics_meta MODIFY COLUMN id INT NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=
+```
+
+### statistics_runs
+*NO CHANGE*
+
+### statistics_short_term
+
+```sql
+SELECT MAX(id) AS Count from statistics_short_term;
+ALTER TABLE statistics_short_term MODIFY COLUMN id INT NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=
+```
+
