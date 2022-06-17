@@ -97,6 +97,11 @@ Then alter the `events` table, use the previous max, incremented by 1 (=> +1), a
 ALTER TABLE events MODIFY COLUMN event_id INT NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3189955;
 ```
 
+_OPTIONAL: I had to drop the foreign key before I could alter the auto increment. It will be reinstated below. _
+```sql
+ALTER TABLE states DROP FOREIGN KEY states_ibfk_1;
+```
+
 Repeat this process for the three other tables. Especially `events` and `states` will take some time (half an hour was the longest I saw so far).
 
 ```sql
