@@ -56,8 +56,6 @@ After the script completes, If you're dissatisfied with the default settings, cl
 
 </details>
 
-</details>
-
 <details>
 <summary>PVE6 Home Assistant Container LXC</summary>
 
@@ -82,8 +80,6 @@ Path to HA configuration.yaml
 ```
 /var/lib/docker/volumes/hass_config/_data
 ```
-
-</details>
 
 </details>
 
@@ -114,8 +110,6 @@ Path to HA configuration.yaml
 
 </details>
 
-</details>
-
 <details>
 <summary>ESPHome LXC</summary>
 
@@ -129,8 +123,6 @@ bash -c "$(wget -qLO - https://raw.githubusercontent.com/simeonpashley/Proxmox/m
 
 <h3 align="center" id="heading">:zap: Default Settings:  1GB RAM - 4GB Storage - 2vCPU :zap:</h3>
  
-</details>
-
 </details>
 
 <details>
@@ -177,8 +169,6 @@ sudo systemctl restart mosquitto
 
 </details>
 
-</details>
-
 <details>
 <summary>Node-Red LXC</summary>
 
@@ -192,11 +182,23 @@ bash -c "$(wget -qLO - https://raw.githubusercontent.com/simeonpashley/Proxmox/m
 
 <h3 align="center" id="heading">:zap: Default Settings:  1GB RAM - 4GB Storage - 1vCPU :zap:</h3>
  
+**BONUS**
+
+Add in some spicy node-red nodes. Connect to the console for the Node-Red host you just created.
+
+```bash
+cd ~/.node-red/
+
+npm install --save node-red-contrib-home-assistant-websocket node-red-contrib-bigtimer node-red-contrib-boolean-logic node-red-contrib-config node-red-contrib-diode node-red-contrib-dsm node-red-contrib-influxdb node-red-contrib-isonline node-red-contrib-moment node-red-contrib-npm node-red-contrib-owntracks node-red-contrib-sun-position node-red-contrib-telegrambot node-red-contrib-timeout node-red-dashboard node-red-node-geofence node-red-node-google node-red-node-openweathermap node-red-node-ping node-red-node-random node-red-node-smooth
+```
+ 
+Other nodes to consider, which I didn't want.
+ 
+`node-red-contrib-aedes node-red-contrib-alexa-local node-red-contrib-alexa-notifyme node-red-contrib-amazon-echo node-red-contrib-blynk-ws node-red-contrib-esplogin node-red-contrib-file-function node-red-contrib-fs-ops node-red-contrib-ftp node-red-contrib-grove node-red-contrib-heater-controller node-red-contrib-ibm-watson-iot node-red-contrib-particle node-red-contrib-ramp-thermostat node-red-contrib-tuya-local node-red-contrib-ui-led node-red-contrib-web-worldmap node-red-contrib-yr node-red-node-arduino node-red-node-emoncms node-red-contrib-advanced-ping`
+
 </details>
 
- </details>
-
-<details>
+ <details>
 <summary>Mariadb 10.5 LXC</summary>
 
 <h1 align="center" id="heading"> Proxmox Mariadb 10.5 LXC Container </h1>
@@ -318,8 +320,6 @@ Take a look at  `HA_Migrate-sqlite-to-mysql.md` for how to migrate existing data
 
 </details>
 
-</details>
-
 <details>
 <summary>PVE6 Zigbee2MQTT LXC</summary>
 
@@ -379,8 +379,6 @@ To start Zigbee2MQTT automatically on boot
 ```
 sudo systemctl enable zigbee2mqtt.service
 ```
-
-</details>
 
 </details>
 
@@ -446,8 +444,6 @@ sudo systemctl enable zigbee2mqtt.service
 
 </details>
 
-</details>
-
 <details>
 <summary>Base Debian 10 LXC</summary>
 
@@ -462,8 +458,6 @@ bash -c "$(wget -qLO - https://raw.githubusercontent.com/simeonpashley/Proxmox/m
 <h3 align="center" id="heading">:zap: Default Settings:  512MiB RAM - 2GB Storage - 1vCPU :zap:</h3>
 
 After the script completes, If you're dissatisfied with the default settings, click on the LXC, then on the **_Resources_** tab and change the **_Memory_** and **_Cores_** settings to what you desire. Changes are immediate.
-
-</details>
 
 </details>
 
