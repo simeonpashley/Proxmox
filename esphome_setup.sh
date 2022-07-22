@@ -46,9 +46,6 @@ apt-get -qqy install \
     # Install ESPHome;
     msg "Installing ESPHome..."
     pip3 install esphome &>/dev/null
-    # Installing ESPHome Dashboard
-    msg "Installing ESPHome Dashboard..."
-    pip3 install tornado esptool &>/dev/null
 
 echo "Creating service file esphomeDashboard.service"
 service_path="/etc/systemd/system/esphomeDashboard.service"
